@@ -76,11 +76,11 @@ export function WaitlistPopup({ isOpen, onClose }: WaitlistPopupProps) {
             <div className="p-6">
               <div className="mb-5">
                 <h2 className="text-2xl font-bold text-white mb-2">
-                  Join the Fundora Waitlist
+                  Join the Fundora VIP List
                 </h2>
                 <p className="text-gray-300">
-                  Be the first to access our decentralized financial solutions
-                  when we launch.
+                  Skip to the front of the line and get exclusive early access
+                  to our peer-to-peer lending platform.
                 </p>
               </div>
 
@@ -126,12 +126,13 @@ export function WaitlistPopup({ isOpen, onClose }: WaitlistPopupProps) {
                     type="submit"
                     className="w-full py-6 h-auto text-white bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 border-0"
                   >
-                    Join Waitlist
+                    Join VIP List
                   </Button>
 
                   <p className="text-xs text-gray-400 text-center mt-4">
-                    By joining, you agree to receive updates about Fundora. We
-                    respect your privacy and will never share your information.
+                    By joining our VIP list, you agree to receive exclusive
+                    updates about Fundora. We respect your privacy and will
+                    never share your information.
                   </p>
                 </form>
               ) : (
@@ -152,11 +153,11 @@ export function WaitlistPopup({ isOpen, onClose }: WaitlistPopupProps) {
                     </svg>
                   </div>
                   <h3 className="text-xl font-bold text-white mb-2">
-                    Thank You!
+                    Welcome to the VIP List!
                   </h3>
                   <p className="text-gray-300">
-                    You&apos;ve been added to our waitlist. We&apos;ll notify
-                    you when we launch!
+                    You&apos;ve been added to our VIP list. You&apos;ll be among
+                    the first to access Fundora when we launch!
                   </p>
                   <Button
                     onClick={onClose}
