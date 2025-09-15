@@ -3,9 +3,7 @@
 import { motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
-import { useState } from "react";
 import { Button } from "../ui/button";
-import { WaitlistPopup } from "../waitlist/waitlist-popup";
 
 function FloatingPaths({ position }: { position: number }) {
   const paths = Array.from({ length: 36 }, (_, i) => ({
@@ -57,7 +55,6 @@ function FloatingPaths({ position }: { position: number }) {
 export function HeroSection() {
   const title = "FUNDORA";
   const words = title.split(" ");
-  const [isWaitlistOpen, setIsWaitlistOpen] = useState(false);
 
   return (
     <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-black">
@@ -102,14 +99,19 @@ export function HeroSection() {
             ))}
           </h1>
 
-          <button
-            onClick={() => setIsWaitlistOpen(true)}
-            className="block mx-auto w-full md:w-auto mb-6 py-4 px-8 md:px-12 flex items-center justify-center font-medium text-white bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 border-0 shadow-lg text-lg"
-          >
-            Join VIP Waitlist
-          </button>
+          <div className="my-12">
+            <Link
+              className="text-black my-24 w-full border-black/20 hover:bg-gray-200 p-4 border bg-white "
+              href="https://beta.fundora.biz/"
+            >
+              View the Beta
+            </Link>
+          </div>
 
-          <Link href="https://my.visme.co/view/jw7pzowv-fundora-poc-deck">
+          <Link
+            className="mt-24"
+            href="https://my.visme.co/view/jw7pzowv-fundora-poc-deck"
+          >
             <Button
               className="group h-auto gap-4 py-3 text-left text-white border-white/20 bg-[#212529]/20 hover:bg-[#212529]/40 backdrop-blur-2xl"
               variant="outline"
@@ -133,12 +135,6 @@ export function HeroSection() {
           </Link>
         </motion.div>
       </div>
-
-      {/* Waitlist Popup */}
-      <WaitlistPopup
-        isOpen={isWaitlistOpen}
-        onClose={() => setIsWaitlistOpen(false)}
-      />
     </div>
   );
 }

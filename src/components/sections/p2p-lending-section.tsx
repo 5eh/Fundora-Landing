@@ -1,12 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useState } from "react";
-import { WaitlistPopup } from "../waitlist/waitlist-popup";
+import Link from "next/link";
 
 export function P2PLendingSection() {
-  const [isWaitlistOpen, setIsWaitlistOpen] = useState(false);
-
   return (
     <section className="h-screen flex items-center justify-center px-4 md:px-6 bg-gradient-to-r from-black to-gray-900">
       <div className="container mx-auto max-w-4xl text-center">
@@ -38,20 +35,14 @@ export function P2PLendingSection() {
             </p>
           </div>
 
-          <button
-            onClick={() => setIsWaitlistOpen(true)}
-            className="py-4 px-8 md:px-12 font-medium text-white bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 border-0 shadow-lg text-lg"
+          <Link
+            className="text-black my-24 w-full border-black/20 hover:bg-gray-200 p-4 border bg-white "
+            href="https://beta.fundora.biz/"
           >
-            Join VIP List
-          </button>
+            View the Beta
+          </Link>
         </motion.div>
       </div>
-
-      {/* Waitlist Popup */}
-      <WaitlistPopup
-        isOpen={isWaitlistOpen}
-        onClose={() => setIsWaitlistOpen(false)}
-      />
     </section>
   );
 }

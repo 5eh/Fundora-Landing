@@ -12,7 +12,7 @@ const Page = () => {
   const [activeSection, setActiveSection] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
-  const sectionNames = ["Fundora", "P2P Lending", "Bulla", "WYST", "Contact"];
+  const sectionNames = ["Fundora", "P2P Lending", "Bulla", "WYST", "Beta"];
   const totalSections = sectionNames.length;
 
   const goToSection = (sectionIndex: number) => {

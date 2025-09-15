@@ -27,7 +27,7 @@ export function Footer() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
                 <Link
                   onClick={() => setIsTermsOpen(true)}
-                  className="text-white border-white/20 hover:bg-black/10 p-4 border bg-black "
+                  className="text-white w-full border-white/20 hover:bg-black p-4 border bg-black/70 "
                   href="https://beta.fundora.biz/"
                 >
                   Join the Beta

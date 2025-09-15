@@ -4,9 +4,7 @@ import { motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
 import { Button } from "./button";
-import { WaitlistPopup } from "../waitlist/waitlist-popup";
 
 function FloatingPaths({ position }: { position: number }) {
   const paths = Array.from({ length: 36 }, (_, i) => ({
@@ -57,9 +55,7 @@ function FloatingPaths({ position }: { position: number }) {
 
 export function BackgroundPaths({ title = "FUNDORA" }: { title?: string }) {
   const words = title.split(" ");
-  const [isWaitlistOpen, setIsWaitlistOpen] = useState(false);
 
-  // Platform data array
   const platforms = [
     {
       id: 1,
@@ -126,12 +122,12 @@ export function BackgroundPaths({ title = "FUNDORA" }: { title?: string }) {
             ))}
           </h1>
 
-          <Button
-            onClick={() => setIsWaitlistOpen(true)}
-            className="block mx-auto w-full md:w-auto mb-6 py-4 px-8 md:px-12 flex items-center justify-center font-medium text-white bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 border-0 shadow-lg text-lg"
+          <Link
+            className="text-white w-full border-white/20 hover:bg-black p-4 border bg-black/70 "
+            href="https://beta.fundora.biz/"
           >
-            Join Waitlist
-          </Button>
+            Join the Beta
+          </Link>
 
           <Link href="https://my.visme.co/view/jw7pzowv-fundora-poc-deck">
             <Button
@@ -183,12 +179,6 @@ export function BackgroundPaths({ title = "FUNDORA" }: { title?: string }) {
           </div>
         </div>
       </div>
-
-      {/* Waitlist Popup */}
-      <WaitlistPopup
-        isOpen={isWaitlistOpen}
-        onClose={() => setIsWaitlistOpen(false)}
-      />
     </div>
   );
 }
