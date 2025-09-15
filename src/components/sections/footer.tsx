@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { Button } from "../ui/button";
 import { X } from "lucide-react";
+import Link from "next/link";
 
 export function Footer() {
   const [isTermsOpen, setIsTermsOpen] = useState(false);
@@ -24,13 +25,13 @@ export function Footer() {
               </h3>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-                <Button
+                <Link
                   onClick={() => setIsTermsOpen(true)}
-                  variant="outline"
-                  className="text-white border-white/20 hover:bg-white/10"
+                  className="text-white border-white/20 hover:bg-black/10 p-4 border bg-black "
+                  href="https://beta.fundora.biz/"
                 >
-                  Terms & Conditions
-                </Button>
+                  Join the Beta
+                </Link>
               </div>
 
               <div className="border-t border-gray-600 pt-8">

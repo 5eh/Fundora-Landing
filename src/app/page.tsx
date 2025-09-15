@@ -84,7 +84,6 @@ const Page = () => {
       }
     };
 
-    // Touch handling
     let startX = 0;
     let startY = 0;
 
