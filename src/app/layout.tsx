@@ -1,16 +1,10 @@
 import type { Metadata } from "next";
-import { Montserrat, Hind_Madurai } from "next/font/google";
+import { Unbounded } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 
-const montserrat = Montserrat({
-  variable: "--font-montserrat",
-  subsets: ["latin"],
-});
-
-const hindMadurai = Hind_Madurai({
-  variable: "--font-hind-madurai",
-  weight: ["300", "400", "500", "600", "700"],
+const unbounded = Unbounded({
+  variable: "--font-unbounded",
   subsets: ["latin"],
 });
 
@@ -28,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body
-        className={`${montserrat.variable} ${hindMadurai.variable} antialiased bg-black text-white`}
+        className={` ${unbounded.variable} text-ddin-normal antialiased bg-black text-white`}
       >
         <Analytics />
         {children}

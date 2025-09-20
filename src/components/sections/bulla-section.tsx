@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export function BullaSection() {
   return (
-    <section className="h-screen flex items-center justify-center px-4 md:px-6 bg-gradient-to-r from-gray-900 to-gray-800">
+    <section className="h-screen flex items-center justify-center px-4 md:px-6">
       <div className="container mx-auto max-w-6xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -15,7 +15,7 @@ export function BullaSection() {
             viewport={{ once: true }}
             className="text-center lg:text-left"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h2 className="text-4xl md:text-5xl font-unbounded text-white mb-6">
               Bulla
             </h2>
 
@@ -39,10 +39,10 @@ export function BullaSection() {
             viewport={{ once: true }}
             className="flex justify-center lg:justify-end"
           >
-            <div className="relative w-64 h-64 bg-gradient-to-br from-blue-600/20 to-purple-600/20 p-8 backdrop-blur-sm border border-white/10">
+            <div className="relative w-64 h-64 bg-gradient-to-br  p-8 backdrop-blur-sm ">
               <div className="w-full h-full flex items-center justify-center">
                 <Image
-                  src="/partners/bulla.png"
+                  src="/partners/bulla.svg"
                   alt="Bulla Network"
                   width={200}
                   height={200}

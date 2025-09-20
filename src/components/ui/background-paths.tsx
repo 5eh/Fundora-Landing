@@ -71,12 +71,6 @@ export function BackgroundPaths({ title = "FUNDORA" }: { title?: string }) {
       description:
         "Supporting our testnet development to change the US economy for the great.",
     },
-    {
-      id: 3,
-      title: "Produce Matrix",
-      image: "/partners/bulla.png",
-      description: "The first blockchain produce bazaar.",
-    },
   ];
 
   return (

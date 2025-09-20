@@ -156,7 +156,7 @@ const Page = () => {
       {/* Progress bar */}
       <div className="fixed top-0 left-0 w-full h-1 bg-white/10 z-50">
         <div
-          className="h-full bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-600 ease-out"
+          className="h-full bg-gradient-to-r from-white to-blue-500 transition-all duration-600 ease-out"
           style={{
             width: `${((activeSection + 1) / totalSections) * 100}%`,
           }}

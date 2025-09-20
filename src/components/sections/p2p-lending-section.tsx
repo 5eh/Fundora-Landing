@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function P2PLendingSection() {
   return (
-    <section className="h-screen flex items-center justify-center px-4 md:px-6 bg-gradient-to-r from-black to-gray-900">
+    <section className="h-screen flex items-center justify-center px-4 md:px-6 ">
       <div className="container mx-auto max-w-4xl text-center">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -13,7 +13,7 @@ export function P2PLendingSection() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
+          <h2 className="text-4xl md:text-5xl font-unbounded text-white mb-8">
             Peer to Peer Lending Tools
           </h2>
 

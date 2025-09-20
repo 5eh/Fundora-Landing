@@ -147,3 +147,143 @@
 .duration-600 {
     transition-duration: 600ms;
 }
+
+/* D-DIN Font Family Library */
+
+/* D-DIN Regular */
+@font-face {
+    font-family: "D-DIN";
+    src: url("/fonts/D-DIN.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* D-DIN Italic */
+@font-face {
+    font-family: "D-DIN";
+    src: url("/fonts/D-DIN-Italic.otf") format("opentype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* D-DIN Bold */
+@font-face {
+    font-family: "D-DIN";
+    src: url("/fonts/D-DIN-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* D-DIN Condensed Regular */
+@font-face {
+    font-family: "D-DIN-Condensed";
+    src: url("/fonts/D-DINCondensed.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* D-DIN Condensed Bold */
+@font-face {
+    font-family: "D-DIN-Condensed";
+    src: url("/fonts/D-DINCondensed-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* D-DIN Expanded Regular */
+@font-face {
+    font-family: "D-DIN-Expanded";
+    src: url("/fonts/D-DINExp.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* D-DIN Expanded Italic */
+@font-face {
+    font-family: "D-DIN-Expanded";
+    src: url("/fonts/D-DINExp-Italic.otf") format("opentype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* D-DIN Expanded Bold */
+@font-face {
+    font-family: "D-DIN-Expanded";
+    src: url("/fonts/D-DINExp-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Usage Examples in CSS Classes */
+.font-ddin {
+    font-family: "D-DIN", sans-serif;
+}
+
+.font-ddin-condensed {
+    font-family: "D-DIN-Condensed", sans-serif;
+}
+
+.font-ddin-expanded {
+    font-family: "D-DIN-Expanded", sans-serif;
+}
+
+/* Utility classes for common combinations */
+.text-ddin-normal {
+    font-family: "D-DIN", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.text-ddin-italic {
+    font-family: "D-DIN", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.text-ddin-bold {
+    font-family: "D-DIN", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.text-ddin-condensed {
+    font-family: "D-DIN-Condensed", sans-serif;
+    font-weight: 400;
+}
+
+.text-ddin-condensed-bold {
+    font-family: "D-DIN-Condensed", sans-serif;
+    font-weight: 700;
+}
+
+.text-ddin-expanded {
+    font-family: "D-DIN-Expanded", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.text-ddin-expanded-italic {
+    font-family: "D-DIN-Expanded", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.text-ddin-expanded-bold {
+    font-family: "D-DIN-Expanded", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@layer utilities {
+    .font-unbounded {
+        font-family: var(--font-unbounded), sans-serif;
+    }
+}
